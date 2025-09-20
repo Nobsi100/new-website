@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FixItPhone - Binnen 30 minuten weer online!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="bg-dark text-white">
+    <div class="container d-flex align-items-center justify-content-between py-2">
+      <div class="d-flex align-items-center">
+        <img src="images/logo.png" alt="FixItPhone logo" id="logo" onerror="this.src='images/placeholder.png'">
+        <div class="ms-3">
+          <h1 class="h4 mb-0">FixItPhone</h1>
+          <small>Snelle en betrouwbare telefoonreparaties</small>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navDropdown" role="button" data-bs-toggle="dropdown">Meer</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="about.html">Over Ons</a></li>
+              <li><a class="dropdown-item" href="videos.html">Mijn video's</a></li>
+              <li><a class="dropdown-item" href="game.html">Game</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="search-area">
+        <button class="btn btn-outline-light btn-sm" title="Zoek"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M21 21l-4.35-4.35"></path><circle cx="11" cy="11" r="6" stroke="currentColor" fill="none"></circle></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-4">
+    <!-- Carousel -->
+    <div id="mainCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="services.html#screen"><img src="images/carousel1.jpg" class="d-block w-100 carousel-img" alt="Schermreparatie" onerror="this.src='images/placeholder.png'">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Schermreparatie</h5>
+              <p>Klik om onze schermreparatie-dienst te bekijken</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="services.html#battery"><img src="images/carousel2.jpg" class="d-block w-100 carousel-img" alt="Batterij vervangen" onerror="this.src='images/placeholder.png'">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Batterij vervanging</h5>
+              <p>Klik om te zien hoe snel we uw batterij vervangen</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="services.html#water"><img src="images/carousel3.jpg" class="d-block w-100 carousel-img" alt="Waterschade herstel" onerror="this.src='images/placeholder.png'">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Waterschade</h5>
+              <p>Snelle droging en reparatie van waterschade</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="services.html#camera"><img src="images/carousel4.jpg" class="d-block w-100 carousel-img" alt="Camera reparatie" onerror="this.src='images/placeholder.png'">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Camera repair</h5>
+              <p>Herstel voor scherpe foto's</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Hero and two H1 headings -->
+    <section class="hero p-4 rounded-3 text-center text-dark" style="background:#f8f9fa;">
+      <h1 class="display-5">Binnen 30 minuten weer online!</h1>
+      <p class="lead mb-4">Snelle service – Lage prijs – Garantie op reparatie</p>
+      <div>
+        <a href="tel:+31201234567" class="btn btn-success me-2">Bel Nu</a>
+        <a href="contact.html" class="btn btn-primary">Vraag Offerte</a>
+      </div>
+      <h1 class="mt-4 secondary-h1">FixItPhone — Professionele en vriendelijke monteurs</h1>
+    </section>
+
+    <!-- Services preview -->
+    <section class="mt-4">
+      <h2>Onze diensten</h2>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card service-card" id="screen">
+            <img src="images/service_screen.jpg" class="card-img-top service-img" alt="Schermreparatie" onerror="this.src='images/placeholder.png'">
+            <div class="card-body">
+              <h5 class="card-title">Schermreparatie</h5>
+              <p class="card-text">Voor/na slider op de dienstenpagina.</p>
+              <a href="services.html#screen" class="btn btn-outline-primary">Bekijk</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card service-card" id="battery">
+            <img src="images/service_battery.jpg" class="card-img-top service-img" alt="Batterij vervangen" onerror="this.src='images/placeholder.png'">
+            <div class="card-body">
+              <h5 class="card-title">Batterij vervangen</h5>
+              <p class="card-text">Snel en veilig vervangen met kwaliteitsbatterijen.</p>
+              <a href="services.html#battery" class="btn btn-outline-primary">Bekijk</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card service-card" id="water">
+            <img src="images/service_water.jpg" class="card-img-top service-img" alt="Waterschade herstel" onerror="this.src='images/placeholder.png'">
+            <div class="card-body">
+              <h5 class="card-title">Waterschade herstellen</h5>
+              <p class="card-text">Professionele reiniging en droging van uw apparaat.</p>
+              <a href="services.html#water" class="btn btn-outline-primary">Bekijk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery (6 photos user said they have) -->
+    <section class="mt-4">
+      <h2>Voorbeelden van reparaties</h2>
+      <div class="row gallery">
+        <div class="col-6 col-md-4 mb-3"><img src="images/repair1.jpg" alt="Repair 1" class="img-fluid framed" onerror="this.src='images/placeholder.png'"></div>
+        <div class="col-6 col-md-4 mb-3"><img src="images/repair2.jpg" alt="Repair 2" class="img-fluid framed" onerror="this.src='images/placeholder.png'"></div>
+        <div class="col-6 col-md-4 mb-3"><img src="images/repair3.jpg" alt="Repair 3" class="img-fluid framed" onerror="this.src='images/placeholder.png'"></div>
+        <div class="col-6 col-md-4 mb-3"><img src="images/repair4.jpg" alt="Repair 4" class="img-fluid framed" onerror="this.src='images/placeholder.png'"></div>
+        <div class="col-6 col-md-4 mb-3"><img src="images/repair5.jpg" alt="Repair 5" class="img-fluid framed" onerror="this.src='images/placeholder.png'"></div>
+        <div class="col-6 col-md-4 mb-3"><img src="images/repair6.jpg" alt="Repair 6" class="img-fluid framed" onerror="this.src='images/placeholder.png'"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3 mt-4">
+    <div class="container d-flex justify-content-between">
+      <div>
+        <strong>FixItPhone</strong><br>
+        Adres: Examplestraat 1, 1234 AB Stad<br>
+        Tel: +31 20 123 4567 | Email: info@fixitphone.nl
+      </div>
+      <div class="text-end">
+        <a href="#" class="text-white d-block">Privacy</a>
+        <a href="#" class="text-white d-block">Algemene voorwaarden</a>
+        <small class="d-block mt-2">© FixItPhone - demo</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
